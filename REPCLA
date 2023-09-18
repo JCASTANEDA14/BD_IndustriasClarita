@@ -72,3 +72,42 @@ Total float,
 constraint fk_Producto foreign key (id_Producto) references Producto (id_Producto),
 constraint fk_Cliente foreign key (id_Cliente) references Cliente (id_Cliente),
 constraint fk_Empleado foreign key (id_Empleado) references Empleado (id_Empleado));
+
+
+INSERT INTO Cliente (id_Cliente, Nombre, Apellido, Direccion, Telefono, Correo)
+VALUES 
+('0101','Fernanda','Bobadilla','Mexicaltzingo Edomex','7226597305','fermb@gmail.com'),
+('0102','Alan','Zarco','Lerma Edomex','7226583405','alza@gmail.com'),
+('0103','Alicia','Miro','Villa Victoria Edomex','7228037305','almib@gmail.com'),
+('0104','Mirta','Zapata','Ocuilan Edomex','7226597834','miza@gmail.com'),
+('0105','Monica','Perez','Toluca Edomex','7226599865','mope@gmail.com'),
+('0106','Regina','Jimenez','Huixquilucan Edomex','722659557','guis@gmail.com'),
+('0107','Paulina','Rangel','Teopazulco Edomex','7228527305','paur@gmail.com'),
+('0108','Paola','Reyes','Mina Edomex','72265995405','parey@gmail.com'),
+('0109','Rocio','Quiroz','Cruz Blanca Edomex','722659795','rocqui@gmail.com'),
+('0110','Sara','Sanchez','Palma Edomex','7290297305','sasa@gmail.com'),
+('0111','Erik','Piñon','Rosas Edomex','7226589305','erko@gmail.com'),
+('0112','Samuel','Villa','Maromas Edomex','7226982305','jfurb@gmail.com'),
+('0113','Francisco','Villanueva','Cristo Rey Edomex','7226599375','fracvib@gmail.com'),
+('0114','Jesus','Flores','Coahuila Edomex','7227987305','jesflo@gmail.com'),
+('0115','Greta','Ximenes','Tiangullo Cdmx','5526594505','grxi@gmail.com');
+
+
+INSERT INTO Sucursal (id_Sucursal, Nombre, Telefono, Direccion, Ciudad, email)
+VALUES 
+
+('2101','Clarita "Tamaulipas"','5512234556','Nuevo laredo #65','Tampico','tampclarita@industrias.net'),
+('2102','Clarita "Michoacan"','5523455678','Av. Juarez #96','Morelia','morclarita@industrias.net'),
+('2103','Clarita "Sonora"','5545567890','Guillermo Ptieto #333','Sonora','sonoclarita@industrias.net'),
+('2104','Clarita "Ciudad de Mexico"','5545678901','Tamaulipas #10','Cuajimalpa','cdmxclarita@industrias.net'),
+('2105','Clarita "Toluca"','557881536','Pedregal #56','Toluca','toluclarita@industrias.net'),
+('2106','Clarita "Puebla"','5512234589','ignacio #13','Cholula','puebclarita@industrias.net'),
+('2107','Clarita "Queretaro"','5512234512','Nuevo laredo #65','Santiago','querclarita@industrias.net'),
+('2108','Clarita "Morelos"','5512234523','reforma #24','Tampico','morclarita@industrias.net'),
+('2109','Clarita "Nayarit"','5512234545','Zaragoza #78','Tepic','nayaclarita@industrias.net'),
+('2110','Clarita "Nuevo Leon"','5512234565','La joya #01','Tampico','nleonclarita@industrias.net'),
+('2111','Clarita "Baja California"','5512234567','Nuevo laredo #65','Tampico','bacaclarita@industrias.net'),
+('2112','Clarita "Veracruz"','5512234578','Contreras #14','Guerrero','veraclarita@industrias.net'),
+('2113','Clarita "Sinaloa"','5512234589','Insurgentes #88','Mazatlan','sinaclarita@industrias.net'),
+('2114','Clarita "Oaxaca"','5512234590','Indios verdes #345','Oaxaca','oaxclarita@industrias.net'),
+('2115','Clarita "Hermosillo"','5512234500','parque #67','Hermosillo','hermlarita@industrias.net')
