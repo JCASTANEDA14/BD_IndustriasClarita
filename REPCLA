@@ -1,0 +1,74 @@
+CREACION DE TABLAS PARA BD CLARITA
+
+
+
+create table Cliente (
+id_Cliente char(8) primary key,
+Nombre varchar(50), 
+Apellido varchar(50), 
+Direccion varchar(50), 
+Telefono numeric, 
+Correo varchar (50));
+
+create table Sucursal (
+id_Sucursal char(8) primary key, 
+Nombre varchar(50),
+Telefono numeric,
+Direccion varchar(50), 
+Ciudad varchar(50), 
+email varchar (50)
+);
+
+create table Provedor (
+id_Provedor char(8) primary key,
+Nombre varchar(50), RFC varchar(50), 
+Razon_Social varchar(50),
+Telefono numeric, 
+Direccion varchar(50), 
+Ciudad varchar(50), 
+email varchar (50)
+);
+
+create table Usuario (
+id_Usuario char(8) primary key,
+Nombre varchar(50), 
+Apellido varchar(50), 
+Correo varchar (50), 
+Contraseña varchar(50), 
+Direccion varchar(50), 
+Telefono numeric);
+
+create table Producto (
+id_Producto char(8) primary key, 
+id_Provedor char(8)not null, 
+Nombre varchar(50), 
+Descripcion varchar(50), 
+Precio float, 
+Existencia int, 
+Peso float, 
+imagen float, 
+Categoria varchar(50), 
+Marca varchar(50)
+constraint fk_Provedor foreign key (id_Provedor) references Provedor (id_Provedor));
+
+create table Empleado (
+id_Empleado char(8) primary key, 
+id_Sucursal char(8)not null, 
+Nombre varchar(50), 
+Cargo varchar(50), 
+Hora_Entrada time, 
+Hora_Salida time, 
+Contraseña varchar(50), 
+Imagen varchar(50)
+constraint fk_Sucursal foreign key (id_Sucursal) references Sucursal (id_Sucursal));
+
+create table Ventas (
+id_Venta char(8) primary key, 
+id_Producto char(8)not null,
+id_Cliente char(8)not null,
+id_Empleado char(8)not null,
+Fecha date, 
+Total float, 
+constraint fk_Producto foreign key (id_Producto) references Producto (id_Producto),
+constraint fk_Cliente foreign key (id_Cliente) references Cliente (id_Cliente),
+constraint fk_Empleado foreign key (id_Empleado) references Empleado (id_Empleado));
