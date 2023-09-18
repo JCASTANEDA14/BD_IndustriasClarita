@@ -128,3 +128,73 @@ VALUES
 ('4114','2104','Julio','Ventas','7:00 hrs','17:00 hrs','09886',''),
 ('4115','2104','Clara','Compras','7:00 hrs','17:00 hrs','09887',''),
 ('4116','2104','Clara','Contaduria','7:00 hrs','17:00 hrs','09887','');
+
+INSERT INTO Producto(id_Producto, id_Provedor, Nombre, Descripcion, Precio, Existencia, Peso, Imagen, Categoria, Marca)
+VALUES
+('5101','3101','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5102','3101','Anzuelo','Anzuelo para pezca de 25 cm, reforzado para uso industrial','$2,000','178','300 gr','foto','pezca','SPORTEK'),
+('5103','3101','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5104','3101','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5105','3102','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5106','3102','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5107','3102','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5108','3102','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5109','3103','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5110','3103','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5111','3103','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5112','3103','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5113','3104','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5114','3104','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5115','3104','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5116','3105','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5117','3105','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5118','3105','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5119','3106','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5120','3106','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5121','3106','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5122','3107','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5123','3107','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5124','3107','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK'),
+('5125','3107','Red','Red para pezca de 30 metros cuadrados, reforzada para uso industrial','$70,000','8','550 kg','foto','pezca','SPORTEK');
+
+INSERT INTO Ventas(id_Venta, id_Producto, id_Cliente, id_Empleado, Fecha, Total)
+VALUES    
+('6101','3101','0101','4102','18/09/2023','5'),
+('6102','3101','0101','4102','18/09/2023','5'),
+('6103','3101','0101','4102','18/09/2023','5'),
+('6104','3101','0101','4102','18/09/2023','5'),
+('6105','3101','0101','4102','18/09/2023','5'),
+('6106','3101','0101','4102','18/09/2023','5'),
+('6107','3101','0101','4102','18/09/2023','5'),
+('6108','3101','0101','4102','18/09/2023','5'),
+('6109','3101','0101','4102','18/09/2023','5'),
+('6110','3101','0101','4102','18/09/2023','5'),
+('6111','3101','0101','4102','18/09/2023','5'),
+('6112','3101','0101','4102','18/09/2023','5'),
+('6113','3101','0101','4102','18/09/2023','5'),
+('6114','3101','0101','4102','18/09/2023','5'),
+('6115','3101','0101','4102','18/09/2023','5'),
+('6116','3101','0101','4102','18/09/2023','5'),
+('6117','3101','0101','4102','18/09/2023','5'),
+('6118','3101','0101','4102','18/09/2023','5'),
+('6119','3101','0101','4102','18/09/2023','5'),
+('6120','3101','0101','4102','18/09/2023','5'),
+('6121','3101','0101','4102','18/09/2023','5'),
+('6122','3101','0101','4102','18/09/2023','5'),
+('6123','3101','0101','4102','18/09/2023','5'),
+('6124','3101','0101','4102','18/09/2023','5'),
+('6125','3101','0101','4102','18/09/2023','5');
+    
+INSERT INTO Usuario(id_Usuario, Nombre, Apellido, Correo, Contraseña, Telefono, Direccion )
+VALUES
+('7101','Miguel','Reyes','miguereye@usuario.com','Migue4589','5543769012','Av. Leandro Valle #44 Ocoyoacac Edomex'),
+('7102','Miguel','Reyes','miguereye@usuario.com','Migue4589','5543769012','Av. Leandro Valle #44 Ocoyoacac Edomex'),
+('7103','Miguel','Reyes','miguereye@usuario.com','Migue4589','5543769012','Av. Leandro Valle #44 Ocoyoacac Edomex'),
+('7104','Miguel','Reyes','miguereye@usuario.com','Migue4589','5543769012','Av. Leandro Valle #44 Ocoyoacac Edomex'),
+('7105','Miguel','Reyes','miguereye@usuario.com','Migue4589','5543769012','Av. Leandro Valle #44 Ocoyoacac Edomex'),
+('7106','Miguel','Reyes','miguereye@usuario.com','Migue4589','5543769012','Av. Leandro Valle #44 Ocoyoacac Edomex'),
+('7107','Miguel','Reyes','miguereye@usuario.com','Migue4589','5543769012','Av. Leandro Valle #44 Ocoyoacac Edomex'),
+('7108','Miguel','Reyes','miguereye@usuario.com','Migue4589','5543769012','Av. Leandro Valle #44 Ocoyoacac Edomex'),
+('7109','Miguel','Reyes','miguereye@usuario.com','Migue4589','5543769012','Av. Leandro Valle #44 Ocoyoacac Edomex'),
+('7110','Miguel','Reyes','miguereye@usuario.com','Migue4589','5543769012','Av. Leandro Valle #44 Ocoyoacac Edomex')
+
