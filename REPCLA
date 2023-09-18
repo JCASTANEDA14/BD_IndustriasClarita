@@ -111,3 +111,20 @@ VALUES
 ('2113','Clarita "Sinaloa"','5512234589','Insurgentes #88','Mazatlan','sinaclarita@industrias.net'),
 ('2114','Clarita "Oaxaca"','5512234590','Indios verdes #345','Oaxaca','oaxclarita@industrias.net'),
 ('2115','Clarita "Hermosillo"','5512234500','parque #67','Hermosillo','hermlarita@industrias.net')
+
+INSERT INTO Provedor(id_Provedor, Nombre, RFC, Razon_Social, Telefono,Direccion, Ciudad, email)
+VALUES 
+('3101','Javier Castañeda','CADF010804HJ4','SPORTEK','5513106917','Tamaulipas #10','Cuajimalpa','spt@empreindust.net'),
+('3102','Javier Castañeda','ILDVDLJVCDK15','LANDEK','59821462584','Nuevo laredo #65','Tampico','sdv@empreindust.net'),
+('3103','Javier Castañeda','DFGHRTBVDFB98','TRUPER','5568138403','Av. Juarez #96','Morelia','bgf@empreindust.net'),
+('3104','Javier Castañeda','OIUHIFUNFDF45','MINTRK','5513586397','Guillermo PRieto #333','Sonora','ijh@empreindust.net'),
+('3105','Javier Castañeda','YUTJFHDGBEN98','SIMBRAMEX','5519874563','Pedregal #56','Toluca','werg@empreindust.net'),
+('3106','Javier Castañeda','CCBRDGFDGBD15','NIQUE','551310830','ignacio #13','Cholula','nhfd@empreindust.net'),
+('3107','Javier Castañeda','YIKMUJYMNYY96','HADIDAS','551310837','Nuevo laredo #65','Santiago','poij@empreindust.net'),
+('3108','Javier Castañeda','JNBGFVBGFGE78','RASPET','551310987','reforma #24','Tampico','uhv@empreindust.net'),
+('3109','Javier Castañeda','UYTGBHYTFTR36','DULCEU','551314569','Nuevo laredo #65','Tampico','yg@empreindust.net'),
+('3110','Javier Castañeda','POIUYTREWSDF7','CDDC','5513106896','Contreras #14','Guerrero','sdfy@empreindust.net'),
+('3112','Javier Castañeda','UYTREDUYUTG98','INFRAG','5513145217','Insurgentes #88','Mazatlan','jnhgf@empreindust.net'),
+('3113','Javier Castañeda','ÑLKJHGFDCHJ96','URMAN','5513100017','Indios verdes #345','Oaxaca','poijn@empreindust.net'),
+('3114','Javier Castañeda','XSADSXXAAQS23','JBLO','5513178917','parque #67','Hermosillo','ikm@empreindust.net'),
+('3115','Javier Castañeda','YTREDFGDDD546','TOSHIPA','5019106917','La joya #01','Tampico','qwed@empreindust.net')
