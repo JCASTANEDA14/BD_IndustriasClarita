@@ -48,7 +48,7 @@ Existencia int,
 Peso float, 
 imagen float, 
 Categoria varchar(50), 
-Marca varchar(50)
+Marca varchar(50),
 constraint fk_Provedor foreign key (id_Provedor) references Provedor (id_Provedor));
 
 create table Empleado (
@@ -59,7 +59,7 @@ Cargo varchar(50),
 Hora_Entrada time, 
 Hora_Salida time, 
 Contraseña varchar(50), 
-Imagen varchar(50)
+Imagen varchar(50),
 constraint fk_Sucursal foreign key (id_Sucursal) references Sucursal (id_Sucursal));
 
 create table Ventas (
@@ -93,38 +93,38 @@ VALUES
 ('0115','Greta','Ximenes','Tiangullo Cdmx','5526594505','grxi@gmail.com');
 
 
-INSERT INTO Sucursal (id_Sucursal, Nombre, Telefono, Direccion, Ciudad, email)
+INSERT INTO Sucursal(id_Sucursal, Nombre, Telefono, Direccion, Ciudad, email)
 VALUES 
-
-('2101','Clarita "Tamaulipas"','5512234556','Nuevo laredo #65','Tampico','tampclarita@industrias.net'),
-('2102','Clarita "Michoacan"','5523455678','Av. Juarez #96','Morelia','morclarita@industrias.net'),
-('2103','Clarita "Sonora"','5545567890','Guillermo Ptieto #333','Sonora','sonoclarita@industrias.net'),
-('2104','Clarita "Ciudad de Mexico"','5545678901','Tamaulipas #10','Cuajimalpa','cdmxclarita@industrias.net'),
-('2105','Clarita "Toluca"','557881536','Pedregal #56','Toluca','toluclarita@industrias.net'),
-('2106','Clarita "Puebla"','5512234589','ignacio #13','Cholula','puebclarita@industrias.net'),
-('2107','Clarita "Queretaro"','5512234512','Nuevo laredo #65','Santiago','querclarita@industrias.net'),
-('2108','Clarita "Morelos"','5512234523','reforma #24','Tampico','morclarita@industrias.net'),
-('2109','Clarita "Nayarit"','5512234545','Zaragoza #78','Tepic','nayaclarita@industrias.net'),
-('2110','Clarita "Nuevo Leon"','5512234565','La joya #01','Tampico','nleonclarita@industrias.net'),
-('2111','Clarita "Baja California"','5512234567','Nuevo laredo #65','Tampico','bacaclarita@industrias.net'),
-('2112','Clarita "Veracruz"','5512234578','Contreras #14','Guerrero','veraclarita@industrias.net'),
-('2113','Clarita "Sinaloa"','5512234589','Insurgentes #88','Mazatlan','sinaclarita@industrias.net'),
-('2114','Clarita "Oaxaca"','5512234590','Indios verdes #345','Oaxaca','oaxclarita@industrias.net'),
-('2115','Clarita "Hermosillo"','5512234500','parque #67','Hermosillo','hermlarita@industrias.net')
+('2101','Clarita "Toluca"','5512234556','Nuevo laredo #65','Toluca','tampclarita@industrias.net'),
+('2102','Clarita "Queretaro"','5523455678','Av. Juarez #96','Queretaro','morclarita@industrias.net'),
+('2103','Clarita "Puebla"','5545567890','Guillermo Ptieto #333','Cholula','sonoclarita@industrias.net'),
+('2104','Clarita "Ciudad de Mexico"','5545678901','Tamaulipas #10','Cuajimalpa','cdmxclarita@industrias.net');
 
 INSERT INTO Provedor(id_Provedor, Nombre, RFC, Razon_Social, Telefono,Direccion, Ciudad, email)
 VALUES 
 ('3101','Javier Castañeda','CADF010804HJ4','SPORTEK','5513106917','Tamaulipas #10','Cuajimalpa','spt@empreindust.net'),
-('3102','Javier Castañeda','ILDVDLJVCDK15','LANDEK','59821462584','Nuevo laredo #65','Tampico','sdv@empreindust.net'),
-('3103','Javier Castañeda','DFGHRTBVDFB98','TRUPER','5568138403','Av. Juarez #96','Morelia','bgf@empreindust.net'),
-('3104','Javier Castañeda','OIUHIFUNFDF45','MINTRK','5513586397','Guillermo PRieto #333','Sonora','ijh@empreindust.net'),
-('3105','Javier Castañeda','YUTJFHDGBEN98','SIMBRAMEX','5519874563','Pedregal #56','Toluca','werg@empreindust.net'),
-('3106','Javier Castañeda','CCBRDGFDGBD15','NIQUE','551310830','ignacio #13','Cholula','nhfd@empreindust.net'),
-('3107','Javier Castañeda','YIKMUJYMNYY96','HADIDAS','551310837','Nuevo laredo #65','Santiago','poij@empreindust.net'),
-('3108','Javier Castañeda','JNBGFVBGFGE78','RASPET','551310987','reforma #24','Tampico','uhv@empreindust.net'),
-('3109','Javier Castañeda','UYTGBHYTFTR36','DULCEU','551314569','Nuevo laredo #65','Tampico','yg@empreindust.net'),
-('3110','Javier Castañeda','POIUYTREWSDF7','CDDC','5513106896','Contreras #14','Guerrero','sdfy@empreindust.net'),
-('3112','Javier Castañeda','UYTREDUYUTG98','INFRAG','5513145217','Insurgentes #88','Mazatlan','jnhgf@empreindust.net'),
-('3113','Javier Castañeda','ÑLKJHGFDCHJ96','URMAN','5513100017','Indios verdes #345','Oaxaca','poijn@empreindust.net'),
-('3114','Javier Castañeda','XSADSXXAAQS23','JBLO','5513178917','parque #67','Hermosillo','ikm@empreindust.net'),
-('3115','Javier Castañeda','YTREDFGDDD546','TOSHIPA','5019106917','La joya #01','Tampico','qwed@empreindust.net')
+('3102','Ingrid Lara','ILDVDLJVCDK15','LANDEK','59821462584','Nuevo laredo #65','Tampico','sdv@empreindust.net'),
+('3103','Samantha Castro','DFGHRTBVDFB98','TRUPER','5568138403','Av. Juarez #96','Morelia','bgf@empreindust.net'),
+('3104','Abigail Hernandez','OIUHIFUNFDF45','MINTRK','5513586397','Guillermo PRieto #333','Sonora','ijh@empreindust.net'),
+('3105','Yaneli Martinez','YUTJFHDGBEN98','SIMBRAMEX','5519874563','Pedregal #56','Toluca','werg@empreindust.net'),
+('3106','Jimena Negrete','CCBRDGFDGBD15','NIQUE','551310830','ignacio #13','Cholula','nhfd@empreindust.net'),
+('3107','Mariana Martinez','YIKMUJYMNYY96','HADIDAS','551310837','Nuevo laredo #65','Santiago','poij@empreindust.net');
+
+INSERT INTO Empleado(id_Empleado, id_Sucursal, Nombre, Cargo, Hora_Entrada, Hora_Salida, Contraseña, Imagen)
+VALUES    
+('4101','2101','Mariano','Gerente','7:00 hrs','17:00 hrs','09870',''),
+('4102','2101','Alejandro','Ventas','7:00 hrs','17:00 hrs','09871',''),
+('4103','2101','Brandon','Compras','7:00 hrs','17:00 hrs','09862',''),
+('4104','2101','Erick','Contaduria','7:00 hrs','17:00 hrs','09875',''),
+('4105','2102','Axel','Gerente','7:00 hrs','17:00 hrs','09874',''),
+('4106','2102','Jose','Ventas','7:00 hrs','17:00 hrs','09873',''),
+('4107','2102','Juan','Contaduria','7:00 hrs','17:00 hrs','09872',''),
+('4108','2102','Carlos','Compras','7:00 hrs','17:00 hrs','09880',''),
+('4109','2103','Francisco','Gerente','7:00 hrs','17:00 hrs','09881',''),
+('4110','2103','Pedro','Ventas','7:00 hrs','17:00 hrs','09882',''),
+('4111','2103','Pablo','Compras','7:00 hrs','17:00 hrs','09883',''),
+('4112','2103','Eduardo','Contaduria','7:00 hrs','17:00 hrs','09884',''),
+('4113','2104','Maria','Gerente','7:00 hrs','17:00 hrs','09885',''),
+('4114','2104','Julio','Ventas','7:00 hrs','17:00 hrs','09886',''),
+('4115','2104','Clara','Compras','7:00 hrs','17:00 hrs','09887',''),
+('4116','2104','Clara','Contaduria','7:00 hrs','17:00 hrs','09887','');
